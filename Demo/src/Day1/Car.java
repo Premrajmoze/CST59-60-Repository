@@ -6,7 +6,7 @@ public class Car {
 		
 		int price;
 
-		prme
+		int prem= 10;
 
 	}
 
