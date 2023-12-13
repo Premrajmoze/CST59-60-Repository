@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		<define name="allGroups">
+ 		<include name="payment"></include>
+ 		<include name="shipping"></include>
+ 		<include name="smoke"></include>
+ 		<include name="regression"></include>
+ 	</define>
+ 	<define name="paymentshipping">
+ 		<include name="payment"></include>
+ 		<include name="shipping"></include>
+ 	</define>
+ 	
+ 	<define name="payment">
+ 		<include name="payment"/>
+ 	</define>
+ 	
+ 	<define name="shipping">
+ 		<include name="shipping"/>
+ 	</define>
+ 	
+ 	<define name="smoke">
+ 		<include name="smoke"/>
+ 	</define>
+
+	<define name="regression">
+ 		<include name="regression"/>
+ 	</define>
+ 	<run>
+ 		 <include  name="allGroups"/>
+ 		<!--<include  name="shipping"/>-->
+ 		<!-- <exclude name="smoke"/>-->
+ 		<!--<include name="payment"/>-->
+ 		<!--<include name="smoke"/>-->
+ 		<!--<include name="paymentshipping"/>-->	
+ 	</run>
+	  </groups>
+	  
+    <classes>
+      <class name="testNGGroupsdemo.GroupDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

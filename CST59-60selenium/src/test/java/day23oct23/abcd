@@ -1,0 +1,11 @@
+browser=   edge   
+url=https://www.amazon.com
+maxWindow=false
+browser=firefox
+url=           https://www.letskodeit.com/practice
+url=           https://www.facebook.com
+url=https://www.amazon.com
+age=24
+responseCode=200,201,202
+env=QA
+age=42
