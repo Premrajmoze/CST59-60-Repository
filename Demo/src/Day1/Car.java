@@ -8,6 +8,7 @@ public class Car {
 
 		int prem= 10;
 		float f  =20;
+		String s = "abcd";
 
 	}
 
