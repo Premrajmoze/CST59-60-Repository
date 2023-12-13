@@ -7,6 +7,7 @@ public class Car {
 		int price;
 
 		int prem= 10;
+		float f  =20;
 
 	}
 
