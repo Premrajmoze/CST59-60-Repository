@@ -6,6 +6,8 @@ public class Car {
 		
 		int price;
 
+		prme
+
 	}
 
 }
